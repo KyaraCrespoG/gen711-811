@@ -10,10 +10,7 @@
 **Step 3. Use VScode to establish a connection with RON HPC (High Performance Computing) server through vscode [see here](https://code.visualstudio.com/docs/remote/ssh).** 
 Note: If you have problems with this step, still proceed to step 4.
 
-
-
-
-### How to set up remote-ssh so that you can connect to RON:  
+#### How to set up remote-ssh so that you can connect to RON:  
   1. Open Remote-SSH from VScode's command palette: In VScode , open the 'command palette' by pressing 'CMD + Shift + P'. A little bar at the top of the screen should pop up. Begin to type 'Remote-SSH' and before you get too far, you should see 'Remote-SSH: Add New SSH Host...' option pop-up. Click it. If you are asked what the host operating system is, click **LINUX**
 
   2. Enter ssh connection command: Your command will be 'ssh' and your username (student id) will be entered into the dialog box as follows: 
@@ -42,10 +39,11 @@ Once connected, you will be using Bash (the shell).  If you're unfamiliar with u
   2. From a from your GitHub account, **fork** this repository: https://github.com/jthmiller/gen711-811.git** ![fork image](../images/fork.png) Note: If you can't find the 'fork' button, you can try this [shortcut](https://github.com/jthmiller/gen711-811/fork)    
   3. Copy the address of your cloned repository: You should now have the Gen711/811 Lab Repository in the list of your Github repos. In your web browser, login to GitHub and click on your username in the top left of the screen to ensure that you are at your own github page. Then change the tab in the top left from 'Overview' to the 'Repositories'. If you forked the 'gen711-811' in step 2, you should see 'gen711-811' listed in among your repositories. Click on it, and the click on the green '<> Code' dropdown button and copy the HTTPS address of your Clone (the addess should look like https://github.com/jthmiller/gen711-811.git). We will use this address to run a command at RON to copy this directory there.
   
-  **Step 6. Clone the gen711-811 github repo into your home directory on RON:**
-In VSCode, you should see a little box for typing ssh commands on the bottom right. We will run:   
-
+**Step 5. Clone the gen711-811 github repo into your home directory on RON:**
+If you completed all other steps successfully and hope to leave lab a little earlier than most, try this final task. In VSCode, you should see a little box for typing ssh commands on the bottom right. In the terminal that is connected to RON, we will run the clone command. It should look something like this:   
+``` 
 git clone https://github.com/YOURUSERNAME/gen711-811.git
-
+``` 
+This should have resulted in some indication that everything downloaded. 
 
 <center><b> Important!<br>To get credit for lab 1, submit a link (canvas) to your GitHub page. </b></center>
