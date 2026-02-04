@@ -172,7 +172,7 @@ ssh username@RON.sr.unh.edu
 If that doesn't work, we can try:
 
 ```
-cat ~/.ssh/id_rsa.pub | ssh user@12.34.56.78 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys
+cat ~/.ssh/id_rsa.pub | ssh username@ron.sr.unh.edu "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
 <br>
 </details> <!-- end for mac-->
